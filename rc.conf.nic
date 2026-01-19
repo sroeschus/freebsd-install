@@ -1,0 +1,17 @@
+hostname="freebsd-dev"
+keymap="us.kbd"
+sshd_enable="YES"
+ntpd_enable="YES"
+moused_enable="YES"
+# Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
+dumpdev="AUTO"
+# Intel graphics driver
+kld_list="i915kms"
+# KDE
+dbus_enable="YES"
+# Wifibox settings
+#devmatch_enable="YES"
+#devmatch_blocklist="if_rtw89"
+#wifibox_enable="YES"
+#ifconfig_wifibox0="SYNCDHCP"
+

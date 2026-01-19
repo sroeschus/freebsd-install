@@ -1,0 +1,11 @@
+gpart list
+gpart mofify -i <id> -l label
+
+Labels
+- shrefi
+- shrufs
+- shrswp
+vim /etc/fstab
+ change device to /dev/gpt/shrufs
+                           shrefi
+                           shrswp

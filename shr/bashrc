@@ -1,0 +1,40 @@
+#!/usr/local/bin/bash
+
+# Increase history size to 2000 lines in memory and 5000 lines on disk
+export HISTSIZE=10000
+export HISTFILESIZE=50000
+
+# Ignore duplicate commands and commands starting with a space
+export HISTCONTROL=ignoreboth
+
+# Add timestamps to history entries
+export HISTTIMEFORMAT="%F %T - "
+
+# Ensure history is appended to the file, not overwritten by new sessions
+shopt -s histappend
+
+# Add commands from other terminals.
+export PROMPT_COMMAND="history -a; history -n;$PROMPT_COMMAND"
+
+export MAKEOBJDIRPREFIX=/home/shr/freebsd-dest/obj
+
+# Define aliases
+alias ..='cd ..'
+alias doom='/home/shr/.emacs.d/bin/doom'
+alias et='emacs -nw'
+
+alias fs='cd /home/shr/freebsd-src'
+alias fdest='cd /home/shr/freebsd-dest'
+alias fdoc='cd /home/shr/freebsd-doc'
+
+alias l='eza'
+alias la='eza -a'
+alias lal='eza -al'
+alias ll='eza -l'
+
+alias genlsp='intercept-build --append make -j24 buildkernel KERNCONF=MYKERNEL'
+alias m='make -j24 buildkernel KERNCONF=MYKERNEL'
+alias mc='make clean; make cleankernel KERNCONF=MYKERNEL'
+alias mi='make -DNO_ROOT installkernel KERNCONF=MYKERNEL DESTDIR=/home/shr/freebsd-dest'
+
+alias x=startx
