@@ -1,6 +1,5 @@
 #!/bin/sh
-echo "Enabling network interface"
-dh_client ue0
+set -x
 
 echo "Getting graphics drivers"
 pkg install -y bash
@@ -82,5 +81,8 @@ pkg install -y lscpu
 
 echo "Installing dmidecode"
 pkg install -y dmidecode
+
+echo "Installing qemu"
+pkg install -y qemu
 
 fwget

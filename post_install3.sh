@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 
 cd $HOME
 pwd
@@ -8,7 +9,7 @@ chsh -s /usr/local/bin/bash
 
 # Copy shell setup
 cp /tmp/install/shr/bash_profile /home/shr/.bash_profile
-cp /tmp/install/shr/bashc        /home/shr/.bashrc
+cp /tmp/install/shr/bashrc       /home/shr/.bashrc
 
 # Copy build script.
 cp /tmp/install/shr/root_install_kernel.sh /home/shr/root_install_kernel.sh

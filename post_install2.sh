@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 
 chmod -R 777 /tmp/install
 
@@ -8,7 +9,7 @@ cd /root
 cp /tmp/install/root/shrc .
 cp /tmp/install/root/wifi-test-prepare.sh .
 cp /tmp/install/root/wifi-test-restore.sh .
-cp /tmp/install/root/wireless-test .
+cp /tmp/install/root/wireless-test.sh .
 
 # Copy config files
 cp /tmp/install/loader.conf.wifi /boot

@@ -21,11 +21,13 @@ export MAKEOBJDIRPREFIX=/home/shr/freebsd-dest/obj
 # Define aliases
 alias ..='cd ..'
 alias doom='/home/shr/.emacs.d/bin/doom'
+alias e='emacs'
 alias et='emacs -nw'
 
 alias fs='cd /home/shr/freebsd-src'
 alias fdest='cd /home/shr/freebsd-dest'
 alias fdoc='cd /home/shr/freebsd-doc'
+alias fport='cd /home/shr/freebsd-port'
 
 alias l='eza'
 alias la='eza -a'
