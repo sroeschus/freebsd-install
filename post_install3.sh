@@ -26,6 +26,7 @@ git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 # Setup github repositories
 git clone https://git.freebsd.org/src.git freebsd-src
 git clone https://git.freebsd.org/doc.git freebsd-doc
+git clone https://git.freebsd.org/ports.git freebsd-ports
 
 # Setup build directories
 mkdir /home/shr/freebsd-dest
