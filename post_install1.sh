@@ -85,4 +85,7 @@ pkg install -y dmidecode
 echo "Installing qemu"
 pkg install -y qemu
 
+echo "Installing hwloc2"
+pkg install -y hwloc2
+
 fwget
